@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sablon</title>
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+	<title>Hexagon telek</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
-    <div class="container">
-        <h1>Sablon</h1>
-    </div>
-    <script src="app.js"></script>
+	<h1>Hexagon telek</h1>
+	<p>Az alábbi kalkulátorral számíthatja ki, hogy hány négyzetméter gyeptégla szükséges a gyepesítéshez.</p>
+	<div>
+		<label for="a">Az első telek oldalának hossza:</label>
+		<input type="number" id="a" name="a" required>
+	</div>
+	<div>
+		<label for="b">A második telek oldalának hossza:</label>
+		<input type="number" id="b" name="b" required>
+	</div>
+	<button onclick="calculate()">Számítás</button>
+	<p id="result"></p>
+	<script src="app.js"></script>
 </body>
 </html>
